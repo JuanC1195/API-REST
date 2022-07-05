@@ -1,0 +1,24 @@
+package com.sistema.blog.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.sistema.blog.dto.PublicacionDTO;
+import com.sistema.blog.model.Publicacion;
+import com.sistema.blog.repository.PublicacionRepository;
+
+@Service
+public class PublicacionServiceImpl implements PublicacionService{
+
+	@Autowired
+	private PublicacionRepository publicacionRepository;
+	
+	@Override
+	public PublicacionDTO crearPublicacion(PublicacionDTO publicacionDTO) {
+		//Convertimos de DTO a entidad
+		Publicacion publicacion = new Publicacion();
+		publicacion.setTitulo(publicacionDTO.getTitulo());
+		return null;
+	}
+
+}

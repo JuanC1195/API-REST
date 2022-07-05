@@ -1,0 +1,5 @@
+package com.sistema.blog.model;
+
+public class Publicacion {
+
+}

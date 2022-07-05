@@ -1,0 +1,5 @@
+package com.sistema.blog.service;
+
+public class PublicacionService {
+
+}
