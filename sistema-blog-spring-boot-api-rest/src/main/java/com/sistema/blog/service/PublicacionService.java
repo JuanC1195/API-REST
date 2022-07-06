@@ -1,14 +1,13 @@
 package com.sistema.blog.service;
 
-import java.util.List;
-
 import com.sistema.blog.dto.PublicacionDTO;
+import com.sistema.blog.dto.PublicacionRespuesta;
 
 public interface PublicacionService {
 
 	public PublicacionDTO crearPublicacion(PublicacionDTO publicacionDTO);
 	
-	public List<PublicacionDTO> obtenerTodasLasPublicaciones();
+	public PublicacionRespuesta obtenerTodasLasPublicaciones(int numeroDePagina, int medidaDePagina, String ordenarPor, String sortDir);
 	
 	public PublicacionDTO obtenerPublicacionPorId(long id);
 	
